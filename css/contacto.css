@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "open sans";
+  background: #000000cc; }
+
+.contacto {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 110vh; }
+  .contacto .ayuda {
+    width: 50%;
+    margin-top: 100px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    line-height: 45px; }
+    .contacto .ayuda h2 {
+      margin-top: 100px;
+      font-size: 40px; }
+      .contacto .ayuda h2 span {
+        font-size: 45px;
+        color: #08f7ff; }
+    .contacto .ayuda h3 {
+      margin-top: 20px;
+      font-size: 35px; }
+    .contacto .ayuda p {
+      padding: 20px 70px;
+      font-size: 30px;
+      letter-spacing: 2px; }
+  .contacto .DivForm {
+    width: 50%; }
+    .contacto .DivForm .formulario {
+      padding: 120px 10px;
+      padding-left: 100px;
+      display: flexbox; }
+      .contacto .DivForm .formulario label {
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        margin: 12px 0; }
+      .contacto .DivForm .formulario input[type=text], .contacto .DivForm .formulario input[type=email] {
+        height: 40px;
+        width: 400px;
+        margin-left: 10px;
+        background: none;
+        border-radius: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.6);
+        color: #fff;
+        padding: 0 20px; }
+        .contacto .DivForm .formulario input[type=text]:focus, .contacto .DivForm .formulario input[type=email]:focus {
+          border: 4px solid #08f7ff; }
+      .contacto .DivForm .formulario textarea {
+        padding: 20px;
+        display: block;
+        border: 3px solid rgba(255, 255, 255, 0.6);
+        color: #fff;
+        margin: 50px 10px;
+        border-radius: 15px;
+        background: none;
+        width: 370px;
+        max-width: 370px;
+        min-width: 370px;
+        height: 150px;
+        max-height: 200px;
+        min-height: 150px; }
+        .contacto .DivForm .formulario textarea:focus {
+          border: 4px solid #08f7ff; }
+      .contacto .DivForm .formulario .mandar {
+        margin: -170px 400px;
+        color: #fff; }
+        .contacto .DivForm .formulario .mandar input[type=submit] {
+          position: absolute;
+          padding: 30px;
+          border-radius: 50%;
+          background: none;
+          border: 3px solid rgba(255, 255, 255, 0.6); }
+        .contacto .DivForm .formulario .mandar i {
+          position: relative;
+          font-size: 20px;
+          left: 23px;
+          top: 30px; }
+
+@media screen and (max-width: 1200px) {
+  .contacto {
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .contacto .ayuda {
+      width: 100%;
+      background: red; }
+    .contacto .DivForm {
+      width: 100%;
+      height: 500px;
+      background: blue; }
+      .contacto .DivForm .formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .contacto .DivForm .formulario .mitad1 {
+          display: block;
+          width: 50%;
+          background: red; }
+        .contacto .DivForm .formulario .mitad2 {
+          display: block;
+          width: 50%;
+          background: yellow; } }
+footer {
+  width: 100%;
+  background: #000000; }
+  footer nav {
+    width: 100%; }
+    footer nav .enlaces {
+      width: 77%;
+      display: inline-flex; }
+      footer nav .enlaces .nave {
+        width: 23%; }
+      footer nav .enlaces .estatic {
+        width: 30%; }
+    footer nav .redes {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 22%; }
+    footer nav a {
+      text-align: center;
+      display: inline-block;
+      padding: 35px 30px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 25px; }
+      footer nav a:hover {
+        transition: all ease 0.5s;
+        background: #08ceffe0; }
+    footer nav .facebook:hover {
+      background: #3b5998; }
+    footer nav .youtube:hover {
+      background: #ff0000; }
+    footer nav .github:hover {
+      background: #333; }
+    footer nav .instagram:hover {
+      background: #3f729b; }
+
+@media screen and (max-width: 1050px) {
+  footer nav .enlaces {
+    width: 100%; }
+  footer nav .redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    footer nav .redes a {
+      width: 23%; } }
+@media screen and (max-width: 675px) {
+  footer nav .enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%; }
+    footer nav .enlaces .nave {
+      width: 30%; }
+    footer nav .enlaces .estatic {
+      width: 100%; } }
+@media screen and (max-width: 550px) {
+  footer nav .enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    footer nav .enlaces .nave {
+      width: 100%; }
+    footer nav .enlaces .estatic {
+      width: 100%; }
+    footer nav .enlaces a {
+      width: 100%; } }
+@media screen and (max-width: 350px) {
+  footer nav .redes {
+    flex-direction: column;
+    justify-content: center; }
+    footer nav .redes a {
+      width: 100%; }
+  footer nav .enlaces {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%; }
+    footer nav .enlaces .nave {
+      width: 100%; }
+    footer nav .enlaces .estatic {
+      width: 100%; }
+    footer nav .enlaces a {
+      width: 100%; } }
+
+/*# sourceMappingURL=contacto.css.map */

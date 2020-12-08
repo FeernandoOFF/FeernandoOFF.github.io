@@ -1,0 +1,113 @@
+.conocimientos
+    background: #000
+    height: 450px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: 2px solid rgba(#fff,.3 )
+
+    .contenedor
+        display: flex
+        text-align: left
+        width: 60%
+        height: 60px
+        font-size: 60px
+        line-height: 60px
+        color: #fff
+        overflow: hidden
+        letter-spacing: 4px
+        .conoc
+            
+            font-size: 64px 
+        ul
+            list-style: none
+            padding-left: 50px
+            animation: cambio 20s infinite
+            padding-right: 0
+            .color
+                color: #08f7ff
+            .no
+                text-decoration: line-through
+
+
+
+
+@keyframes cambio
+    0%
+        margin-top: 0
+    7%
+        margin-top: -60px
+    14% 
+        margin-top: -120px
+    21%
+        margin-top: -180px
+    28%
+        margin-top: -240px
+    35%
+        margin-top: -300px
+    42%
+        margin-top: -360px
+    49%
+        margin-top: -420px
+    56%
+        margin-top: -480px
+    63%
+        margin-top: -540px
+    66%
+        margin-top: -600px
+    69%
+        margin-top: -540px
+    72%
+        margin-top: -480px
+    75%
+        margin-top: -420px
+    78%
+        margin-top: -360px
+    81%
+        margin-top: -300px
+    84%
+        margin-top: -240px
+    87%
+        margin-top: -180px
+    90%
+        margin-top: -120px
+    93%
+        margin-top: -60px
+
+
+@media screen and (max-width: 1400px)
+    .conocimientos
+        .contenedor
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            width: 100%
+            height: 120px
+            .conoc
+                order: 1
+               
+                text-align: center
+                width: 100%
+                height: 60px
+                overflow: hidden
+               
+            .lista
+                overflow: hidden
+                width: 100%
+                height: 60px
+                text-align: center
+                order: 2
+@media screen and (max-width: 650px)
+    .conocimientos
+        .contenedor
+            .conoc
+                font-size: 35px
+            .lista
+                font-size: 30px
+@media screen and (max-width: 400px)
+    .conocimientos
+        .contenedor
+            .conoc
+                font-size: 25px
+            .lista
+                font-size: 20px
